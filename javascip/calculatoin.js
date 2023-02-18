@@ -1,12 +1,14 @@
-let serial = 3;
+let serial = 1;
 document.getElementById('btn-triangle').addEventListener('click', function(){
     /*---------------------triangle value-------------*/
     const  trianglenumber = elemetsvalue('triangle-fild-b');
     const triangleHnumber = elemetsvalue('triangle-fild-h');
+    const TriangleNam = document.getElementById('Triangle-nam').innerText;
     /*-----triangle calculate----------*/
     const triangleAreaa = (0.5 * trianglenumber * triangleHnumber).toFixed(2);
     /*----------------------triangle calculatoin show----------------------*/
-    getCalulatoinShow('area-total', triangleAreaa);
+    tabletotalcostdisplay(TriangleNam, triangleAreaa);
+    serial = serial + 1;
  
 })
 
@@ -18,10 +20,12 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
     /*---------------------rectangle value-------------*/
     const  rectangleWValue = elemetsvalue('rectangle-w');
     const rectangleLValue = elemetsvalue('rectangle-l');
+    const RectangleNam = document.getElementById('Rectangle-nam').innerText;
     /*---------------------rectangle calculatoin-------------*/
     const rectangleArea = (rectangleWValue * rectangleLValue).toFixed(2);
     /*---------------------rectangle calculatoin show-------------*/
-    getCalulatoinShow('rectangle-total', rectangleArea);
+    tabletotalcostdisplay(RectangleNam, rectangleArea);
+    serial = serial + 1;
 })
 
 

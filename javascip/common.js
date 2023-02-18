@@ -7,10 +7,10 @@ function elemetsvalue(element){
 }
 /*-----------------------------elemts show functoin----------------------*/
 
-function getCalulatoinShow(ID, value){
+/*function getCalulatoinShow(ID, value){
     const IDshow = document.getElementById(ID);
     IDshow.innerText = value;
-}
+}*/
 
 
 

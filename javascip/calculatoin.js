@@ -7,6 +7,7 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const triangleAreaa = (0.5 * trianglenumber * triangleHnumber).toFixed(2);
     /*----------------------triangle calculatoin show----------------------*/
     getCalulatoinShow('area-total', triangleAreaa);
+ 
 })
 
 
@@ -89,3 +90,23 @@ document.getElementById('Ellipse-btn').addEventListener('click', function(){
 document.getElementById('naver-bolg-btn').addEventListener('click', function(){
     window.location.href = 'mcq.html';
 })
+
+
+const myElement = document.getElementById('my-element');
+const colors = ['red', 'blue', 'green', 'purple', 'orange']; 
+let colorIndex = 0; 
+
+myElement.addEventListener('mouseenter', function() {
+
+  myElement.style.backgroundColor = colors[colorIndex];
+  colorIndex = (colorIndex + 1) % colors.length;
+});
+
+const mycecoelement = document.getElementById('my-ceco-element');
+const colors2 = ['bule', 'green', 'orange', 'purple', 'blue']; 
+let colorIndex2 = 0; 
+myElement.addEventListener('mouseenter', function() {
+
+    mycecoelement.style.backgroundColor = colors2[colorIndex2];
+  colorIndex2 = (colorIndex2 + 1) % colors2.length;
+});

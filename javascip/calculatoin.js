@@ -107,7 +107,7 @@ myElement.addEventListener('mouseenter', function() {
 });
 
 const mycecoelement = document.getElementById('my-ceco-element');
-const colors2 = ['bule', 'green', 'orange', 'purple', 'blue']; 
+const colors2 = ['aqua', 'brown', 'orange', 'yellow', 'blue']; 
 let colorIndex2 = 0; 
 myElement.addEventListener('mouseenter', function() {
 

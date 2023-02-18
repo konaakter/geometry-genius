@@ -3,7 +3,14 @@ function elemetsvalue(element){
     const elementstring = elemetsfild.value;
     const elementsnumber = parseFloat(elementstring);
     elemetsfild.value = ' ';
-    return elementsnumber;
+
+    if (isNaN(parseFloat(elementsnumber))|| elementsnumber <= 0) {
+        alert('Input a Valid number');
+        return;
+    }
+    else{
+        return elementsnumber;
+    }
 }
 /*-----------------------------elemts show functoin----------------------*/
 
@@ -18,6 +25,10 @@ function elemetsvalue(element){
 function tabletotalcostdisplay(nam, areatotal){
     const container =  document.getElementById("table-containe");
     const tr = document.createElement("tr");
+
+    if (isNaN(areatotal)) {
+        return;
+    }    
     tr.innerHTML = `
        <td>${serial}</d>
        <td>${nam}</td>  
@@ -28,3 +39,5 @@ function tabletotalcostdisplay(nam, areatotal){
     container.appendChild(tr);
 
 }
+
+

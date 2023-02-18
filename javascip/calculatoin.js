@@ -76,3 +76,18 @@ document.getElementById('Ellipse-btn').addEventListener('click', function(){
     tabletotalcostdisplay(EllipseName, EllipseArea);
 
 })
+
+
+
+
+
+
+
+
+
+
+
+/********************************to go another html pase***************************** */
+document.getElementById('naver-bolg-btn').addEventListener('click', function(){
+    window.location.href = 'mcq.html';
+})

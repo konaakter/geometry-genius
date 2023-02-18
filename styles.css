@@ -1,7 +1,5 @@
 
-.list li{
-    list-style: none;
-}
+
 /*const trianglefild = document.getElementById('triangle-fild-b');
     const trianglefildstring = trianglefild.value;
     const trianglenumber = parseFloat(trianglefildstring);

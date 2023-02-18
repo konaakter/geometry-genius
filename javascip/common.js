@@ -22,7 +22,7 @@ function tabletotalcostdisplay(nam, areatotal){
        <td>${1}</d>
        <td>${nam}</td>  
        <td>${areatotal} <sup>2</sup> cm</td>
-       <td><button class="btn btn-info ">Covert</button></td>
+       <td><button class="btn btn-info ">Covert to m<sup>2</sup></button></td>
     
     `;
     container.appendChild(tr);

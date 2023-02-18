@@ -10,7 +10,7 @@
 </head>
 <body class="container-lg">
     <header class="container-lg">
-        <nav class="navbar bg-body-tertiary ">
+        <nav class="navbar bg-body-tertiary bg-primary-subtle ">
             <div class="container-fluid">
                 <div>
                     <a class="navbar-brand text-black fs-2 fw-bold">Interactive</a> <br>
@@ -18,7 +18,7 @@
                 </div>
               <form class="d-flex" role="search">
                 
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button type="button" class="btn btn-primary">Blog</button>
               </form>
             </div>
           </nav>
@@ -39,7 +39,7 @@
                         <p class="me-2">cm</p>
                       </div>
                       <div class="d-grid gap-2 col-10 mx-auto mt-4">
-                        <button id="btn-triangle" class="btn btn-primary" type="button">Button</button>
+                        <button id="btn-triangle" class="btn btn-primary" type="button">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -57,7 +57,7 @@
                         <p class="me-2">cm</p>
                       </div>
                       <div class="d-grid gap-2 col-10 mx-auto mt-4">
-                        <button id="btn-rectangle" class="btn btn-primary" type="button">Button</button>
+                        <button id="btn-rectangle" class="btn btn-primary" type="button">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -75,7 +75,7 @@
                         <p class="me-2">cm</p>
                       </div>
                       <div class="d-grid gap-2 col-10 mx-auto mt-4">
-                        <button id="Parallelogram-btn" class="btn btn-primary" type="button">Button</button>
+                        <button id="Parallelogram-btn" class="btn btn-primary" type="button">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -95,7 +95,7 @@
                         <p class="me-2">cm</p>
                       </div>
                       <div class="d-grid gap-2 col-10 mx-auto mt-4">
-                        <button id="Rhombus-btn" class="btn btn-primary" type="button">Button</button>
+                        <button id="Rhombus-btn" class="btn btn-primary" type="button">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -113,7 +113,7 @@
                         <p class="me-2">cm</p>
                       </div>
                       <div class="d-grid gap-2 col-10 mx-auto mt-4">
-                        <button id="Pentagon-btn" class="btn btn-primary" type="button">Button</button>
+                        <button id="Pentagon-btn" class="btn btn-primary" type="button">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -130,8 +130,8 @@
                         <input class="w-50 me-2" type="text" name="" id="Ellipse-b">
                         <p class="me-2">cm</p>
                       </div>
-                      <div class="d-grid gap-2 col-10 mx-auto mt-4">
-                        <button id="Ellipse-btn" class="btn btn-primary" type="button">Button</button>
+                      <div class="d-grid gap-2 col-10 mx-auto mt-4">n
+                        <button id="Ellipse-btn" class="btn btn-primary" type="button">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -147,13 +147,13 @@
                   <th scope="col">1</th>
                   <th scope="col">triangle</th>
                   <th scope="col"><span id="area-total">12</span><sup>2</sup> cm</th>
-                  <th scope="col"><button class="btn btn-info">Covert</button></th>
+                  <th scope="col"><button class="btn btn-info">Covert to m<sup>2</sup></button></th>
                 </tr>
                 <tr>
                   <th scope="row">1</th>
                   <td>Rectangle</td>
                   <td><span id="triangle-total">12</span><sup>2</sup> cm</td>
-                  <td><button class="btn btn-info ">Covert</button></td>
+                  <td><button class="btn btn-info ">Covert to m<sup>2</sup></button></td>
                 </tr>
               </thead>
               <tbody id="table-containe">
@@ -169,29 +169,4 @@
 <script src="javascip/calculatoin.js"></script>
 <script src="javascip/common.js"></script>
 </html>
-
-<section class="col-3 mt-5">
-  <div class="mt-5">
-      <div class="card h-100 text-center mt-5 pt-2">
-          <h4>Area Calculation</h4>
-          <div class="d-flex mt-3">
-              <div>
-                  <ol>
-                      <li class="me-2 mb-4">triangle</li>
-                      <li class="me-2">Ellipse</li>
-                  </ol>
-              </div>
-              <div class="list me-2">
-                  <li class="mb-4">
-                     <span id="area-total">12</span><sup>2</sup> cm
-                  </li>
-                  <li> <span>125.60</span> <sup>2</sup> cm</li>
-              </div>
-              <div class="list">
-                  <li><button class="btn btn-info mb-2">Covert</button></li>
-                  <li><button class="btn btn-info ">Covert</button></li>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
+<button class="btn btn-outline-success" type="submit">Search</button>

@@ -1,7 +1,15 @@
-imges-hg{
-    height: 59px;
 
-}
 .list li{
     list-style: none;
 }
+/*const trianglefild = document.getElementById('triangle-fild-b');
+    const trianglefildstring = trianglefild.value;
+    const trianglenumber = parseFloat(trianglefildstring);
+
+    const trianglefildh = document.getElementById('triangle-fild-h');
+    const triangleFildHstring = trianglefildh.value;
+    const triangleHnumber = parseFloat(triangleFildHstring);
+
+
+    const areatotal = document.getElementById('area-total');
+    areatotal.innerText = triangle;

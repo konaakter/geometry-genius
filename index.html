@@ -24,7 +24,7 @@
           </nav>
     </header>
     <main class="row">
-        <section class="mt-4 col-9">
+        <section class="mt-4 col-8">
             <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
                 <div class="col">
                   <div class="card h-100 text-center">
@@ -33,10 +33,13 @@
                       <h5 class="card-title">Triangle</h5>
                       <p class="card-text">Area (A) =0.5 X b X h</p>
                       <div class="d-flex">
-                        <input class="me-2 w-100" type="text" name="" id="">
+                        <input  class="me-2 w-100" type="text" name="" id="triangle-fild-b">
                         <p class="me-2">cm</p>
-                        <input class=" me-2 w-100" type="text" name="" id="">
+                        <input class=" me-2 w-100" type="text" name="" id="triangle-fild-h">
                         <p class="me-2">cm</p>
+                      </div>
+                      <div class="d-grid gap-2 col-10 mx-auto mt-4">
+                        <button id="btn-triangle" class="btn btn-primary" type="button">Button</button>
                       </div>
                     </div>
                   </div>
@@ -48,10 +51,13 @@
                       <h5 class="card-title">rectangle</h5>
                       <p class="card-text">Area (A) = w X I</p>
                       <div class="d-flex">
-                        <input class="me-2 w-100" type="text" name="" id="">
+                        <input class="me-2 w-100" type="text" name="" id="rectangle-w">
                         <p class="me-2">cm</p>
-                        <input class=" me-2 w-100" type="text" name="" id="">
+                        <input class=" me-2 w-100" type="text" name="" id="rectangle-l">
                         <p class="me-2">cm</p>
+                      </div>
+                      <div class="d-grid gap-2 col-10 mx-auto mt-4">
+                        <button id="btn-rectangle" class="btn btn-primary" type="button">Button</button>
                       </div>
                     </div>
                   </div>
@@ -60,13 +66,16 @@
                   <div class="card h-100 text-center">
                     <img src="images/parallelogram.png" class="card-img-top w-75 mx-auto w-75 my-5" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Parallelogram</h5>
+                      <h5 id="parallelogram-nam" class="card-title">Parallelogram</h5>
                       <p class="card-text">Area (A) = b X h</p>
                       <div class="d-flex">
-                        <input class="w-50 me-2" type="text" name="" id="">
+                        <input class="w-50 me-2" type="text" name="" id="Parallelogram-base">
                         <p class="me-2">cm</p>
-                        <input class="w-50 me-2" type="text" name="" id="">
+                        <input class="w-50 me-2" type="text" name="" id="Parallelogram-height">
                         <p class="me-2">cm</p>
+                      </div>
+                      <div class="d-grid gap-2 col-10 mx-auto mt-4">
+                        <button id="Parallelogram-btn" class="btn btn-primary" type="button">Button</button>
                       </div>
                     </div>
                   </div>
@@ -78,12 +87,15 @@
                     <img src="images/rhombus.png" class="card-img-top w-50 mx-auto w-75 my-5" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Rhombus</h5>
-                      <p class="card-text">Area (A) = 0.5 X d1 X d2</p>
+                      <p class="card-text">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
                       <div class="d-flex">
                         <input class="w-50 me-2" type="text" name="" id="">
                         <p class="me-2">cm</p>
                         <input class="w-50 me-2" type="text" name="" id="">
                         <p class="me-2">cm</p>
+                      </div>
+                      <div class="d-grid gap-2 col-10 mx-auto mt-4">
+                        <button class="btn btn-primary" type="button">Button</button>
                       </div>
                     </div>
                   </div>
@@ -100,6 +112,9 @@
                         <input class="w-50 me-2" type="text" name="" id="">
                         <p class="me-2">cm</p>
                       </div>
+                      <div class="d-grid gap-2 col-10 mx-auto mt-4">
+                        <button class="btn btn-primary" type="button">Button</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -115,44 +130,68 @@
                         <input class="w-50 me-2" type="text" name="" id="">
                         <p class="me-2">cm</p>
                       </div>
+                      <div class="d-grid gap-2 col-10 mx-auto mt-4">
+                        <button class="btn btn-primary" type="button">Button</button>
+                      </div>
                     </div>
                   </div>
                 </div>
             </div>
         </section>
-        <section class="col-3 mt-5">
-            <div class="mt-5">
-                <div class="card h-100 text-center mt-5 pt-2">
-                    <h4>Area Calculation</h4>
-                    <div class="d-flex mt-3">
-                        <div>
-                            <ol>
-                                <li class="me-2 mb-4">triangle</li>
-                                <li class="me-2">Ellipse</li>
-                            </ol>
-                        </div>
-                        <div class="list me-2">
-                            <li class="mb-4">
-                                125.60cm
-                            </li>
-                            <li>12cm</li>
-                        </div>
-                        <div class="list">
-                            <li><button class="btn btn-info mb-2">Covert</button></li>
-                            <li><button class="btn btn-info ">Covert</button></li>
-                        </div>
+        <section class="col-4 mt-5">
+          <div class="card  mt-5 pt-2 pe-2 w-100">
+            <h4 class="text-center">Area Calculation</h4>
+            <table class="table table-borderless ">
+              <thead>
+                <tr>
+                  <th scope="col">1</th>
+                  <th scope="col">triangle</th>
+                  <th scope="col"><span id="area-total">12</span><sup>2</sup> cm</th>
+                  <th scope="col"><button class="btn btn-info">Covert</button></th>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Ellipse</td>
+                  <td><span id="triangle-total">12</span><sup>2</sup> cm</td>
+                  <td><button class="btn btn-info ">Covert</button></td>
+                </tr>
+              </thead>
+              <tbody id="table-containe">
+                <tr></tr>
+              </tbody>
+              </table>
 
-                    </div>
-                    <div>
-
-
-                    </div>
-
-                </div>
-            </div>
+          </div>
         </section>
-
     </main>
     
 </body>
+<script src="javascip/calculatoin.js"></script>
+<script src="javascip/common.js"></script>
 </html>
+
+<section class="col-3 mt-5">
+  <div class="mt-5">
+      <div class="card h-100 text-center mt-5 pt-2">
+          <h4>Area Calculation</h4>
+          <div class="d-flex mt-3">
+              <div>
+                  <ol>
+                      <li class="me-2 mb-4">triangle</li>
+                      <li class="me-2">Ellipse</li>
+                  </ol>
+              </div>
+              <div class="list me-2">
+                  <li class="mb-4">
+                     <span id="area-total">12</span><sup>2</sup> cm
+                  </li>
+                  <li> <span>125.60</span> <sup>2</sup> cm</li>
+              </div>
+              <div class="list">
+                  <li><button class="btn btn-info mb-2">Covert</button></li>
+                  <li><button class="btn btn-info ">Covert</button></li>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>

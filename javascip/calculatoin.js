@@ -20,7 +20,7 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
     /*---------------------rectangle calculatoin-------------*/
     const rectangleArea = (rectangleWValue * rectangleLValue).toFixed(2);
     /*---------------------rectangle calculatoin show-------------*/
-    getCalulatoinShow('triangle-total', rectangleArea);
+    getCalulatoinShow('rectangle-total', rectangleArea);
 })
 
 

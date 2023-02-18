@@ -12,12 +12,6 @@ function elemetsvalue(element){
         return elementsnumber;
     }
 }
-/*-----------------------------elemts show functoin----------------------*/
-
-/*function getCalulatoinShow(ID, value){
-    const IDshow = document.getElementById(ID);
-    IDshow.innerText = value;
-}*/
 
 
 

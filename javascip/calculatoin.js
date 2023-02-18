@@ -42,16 +42,6 @@ document.getElementById('Parallelogram-btn').addEventListener('click', function(
     tabletotalcostdisplay(parallelogramname, ParallelogramArea);
     serial = serial + 1;
 
-  /*  const container =  document.getElementById("table-containe");
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-       <td>${1}</d>
-       <td>${parallelogramname}</td>  
-       <td>${ParallelogramArea} <sup>2</sup> cm</td>
-       <td><button class="btn btn-info ">Covert</button></td>
-    
-    `;
-    container.appendChild(tr);*/
 
 });
 /*--------------------------------------------rhomboscard------------------------------------*/

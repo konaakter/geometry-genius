@@ -19,7 +19,7 @@ function tabletotalcostdisplay(nam, areatotal){
     const container =  document.getElementById("table-containe");
     const tr = document.createElement("tr");
     tr.innerHTML = `
-       <td>${1}</d>
+       <td>${serial}</d>
        <td>${nam}</td>  
        <td>${areatotal} <sup>2</sup> cm</td>
        <td><button class="btn btn-info ">Covert to m<sup>2</sup></button></td>

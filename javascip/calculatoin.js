@@ -1,4 +1,4 @@
-
+let serial = 3;
 document.getElementById('btn-triangle').addEventListener('click', function(){
     /*---------------------triangle value-------------*/
     const  trianglenumber = elemetsvalue('triangle-fild-b');
@@ -32,9 +32,10 @@ document.getElementById('Parallelogram-btn').addEventListener('click', function(
     const  ParallelogramBaseValue = elemetsvalue('Parallelogram-base');
     const ParallelogramHeightValue = elemetsvalue('Parallelogram-height');
     const parallelogramname = document.getElementById('parallelogram-nam').innerText;
-    const ParallelogramArea = ParallelogramBaseValue * ParallelogramHeightValue;
+    const ParallelogramArea = (ParallelogramBaseValue * ParallelogramHeightValue).toFixed(2);
     
     tabletotalcostdisplay(parallelogramname, ParallelogramArea);
+    serial = serial + 1;
 
   /*  const container =  document.getElementById("table-containe");
     const tr = document.createElement("tr");
@@ -48,6 +49,7 @@ document.getElementById('Parallelogram-btn').addEventListener('click', function(
     container.appendChild(tr);*/
 
 });
+/*--------------------------------------------rhomboscard------------------------------------*/
 
 document.getElementById('Rhombus-btn').addEventListener('click', function(){
     const RhombusD1Value = elemetsvalue('Rhombus-d1');
@@ -55,17 +57,21 @@ document.getElementById('Rhombus-btn').addEventListener('click', function(){
     const RhombusName = document.getElementById('Rhombus-nam').innerText;
     const RhombusArea = (0.5 * RhombusD1Value * RhombusD2Value).toFixed(2);
     tabletotalcostdisplay(RhombusName, RhombusArea);
+    serial = serial + 1;
 
 
 })
+/******************************************pentagomgcard**************************** */
 document.getElementById('Pentagon-btn').addEventListener('click', function(){
     const PentagonVValue = elemetsvalue('Pentagon-v');
     const PentagonPValue = elemetsvalue('Pentagon-p');
     const PentagonName = document.getElementById('Pentagon-nam').innerText;
     const PentagonArea = (0.5 * PentagonVValue * PentagonPValue).toFixed(2);
     tabletotalcostdisplay(PentagonName, PentagonArea);
+    serial = serial + 1;
 
 })
+/**********************************elliosecard********************************* */
 
 document.getElementById('Ellipse-btn').addEventListener('click', function(){
     const EllipseAValue = elemetsvalue('Ellipse-a');
@@ -74,17 +80,9 @@ document.getElementById('Ellipse-btn').addEventListener('click', function(){
     const pie = 3.1416
     const EllipseArea = (pie * EllipseAValue * EllipseBValue).toFixed(2);
     tabletotalcostdisplay(EllipseName, EllipseArea);
+    serial = serial + 1;
 
 })
-
-
-
-
-
-
-
-
-
 
 
 /********************************to go another html pase***************************** */

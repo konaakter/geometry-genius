@@ -5,7 +5,7 @@ function elemetsvalue(element){
     elemetsfild.value = ' ';
 
     if (isNaN(parseFloat(elementsnumber))|| elementsnumber <= 0) {
-        alert('Input a Valid number');
+        alert('Input a right number');
         return;
     }
     else{

@@ -96,21 +96,24 @@ document.getElementById('naver-bolg-btn').addEventListener('click', function(){
 })
 
 
-const myElement = document.getElementById('my-element');
-const colors = ['red', 'blue', 'green', 'purple', 'orange']; 
-let colorIndex = 0; 
+/******************************************hover******************************** */
+function hover(cardname) {
+    const myhover = document.getElementById(cardname);
+    const colors = ['aquamarine', 'green', 'tomato', 'orchid', 'fuchsia']; 
+    let colorIndex = 0; 
+  
+    myhover.addEventListener('mouseenter', function() {
+  
+      myhover.style.backgroundColor = colors[colorIndex];
+      colorIndex = (colorIndex + 1) % colors.length;
+    });
+  }
+  hover('triangle-card');
+  hover('rectangle-card');
+  hover('parallelogram-card');
+  hover('rhombus-card');
+  hover('pentagon-card');
+  hover('ellipse-card');
 
-myElement.addEventListener('mouseenter', function() {
 
-  myElement.style.backgroundColor = colors[colorIndex];
-  colorIndex = (colorIndex + 1) % colors.length;
-});
 
-const mycecoelement = document.getElementById('my-ceco-element');
-const colors2 = ['aqua', 'brown', 'orange', 'yellow', 'blue']; 
-let colorIndex2 = 0; 
-myElement.addEventListener('mouseenter', function() {
-
-    mycecoelement.style.backgroundColor = colors2[colorIndex2];
-  colorIndex2 = (colorIndex2 + 1) % colors2.length;
-});

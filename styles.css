@@ -35,9 +35,9 @@
               </table>
           </div>
         </section>*/
-/*li {
-    background-color: ;
-}*/
+li {
+    background-color: cornflowerblue 
+    blueviolet royalblue  lightpink
 
 
 // Get data 
@@ -72,3 +72,44 @@ function displayData(cardname, total, countnumber) {
     `;
     container.appendChild(tr);
 }
+li{
+    background-color: aquamarine green tomato orchid fuchsia
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function hover(cardname) {
+    const myElement = document.getElementById(cardname);
+    const colors = ['red', 'blue', 'green', 'purple', 'orange']; 
+    let colorIndex = 0; 
+  
+    myElement.addEventListener('mouseenter', function() {
+  
+      myElement.style.backgroundColor = colors[colorIndex];
+      colorIndex = (colorIndex + 1) % colors.length;
+    });
+  }
+  hover('triangle-card');
+  hover('rectangle-card');
+  hover('parallelogram-card');
+  hover('rhombus-card');
+  hover('pentagon-card');
+  hover('ellipse-card');
+  
